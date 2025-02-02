@@ -1,0 +1,15 @@
+Get Server/NAS IPv6 to send myself by E-mail.
+获取服务器动态IPv6通过邮件发送给自己。
+
+Usage
+	Edit email_ip.py and replace the account with yours.
+	crontab -e
+	Setup the task of email_ip.py to periodic autorun.
+
+用法
+	编辑 email_ip.py 替换为你的账户信息。
+	crontab -e
+	配置 email_ip.py 周期性的自动运行。
+
+TODO
+	scp方式
