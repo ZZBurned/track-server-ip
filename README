@@ -1,15 +1,29 @@
+Tracking Server Dynamic IP Address
+追踪服务器的动态IP地址
+
+
 Get Server/NAS IPv6 to send myself by E-mail.
 获取服务器动态IPv6通过邮件发送给自己。
 
 Usage
-	Edit email_ip.py and replace the account with yours.
+	Edit email-ip.py and replace the account with yours.
 	crontab -e
-	Setup the task of email_ip.py to periodic autorun.
+	Setup the task of email-ip.py to periodic autorun.
 
 用法
-	编辑 email_ip.py 替换为你的账户信息。
+	编辑 email-ip.py 替换为你的账户信息。
 	crontab -e
-	配置 email_ip.py 周期性的自动运行。
+	配置 email-ip.py 周期性的自动运行。
+
+
+Update related IPv6 configuration over ssh before current address expired.
+在地址过期前通过ssh命令行更新服务器IPv6地址及相关配置文件。
+
+Usage
+	python3 ssh-ip6.py HOST CONFIG_FILE1 CONFIG_FILE2 ...
+
+用法
+	python3 ssh-ip6.py 主机名 配置文件1 配置文件2 ...
 
 TODO
 	scp方式
